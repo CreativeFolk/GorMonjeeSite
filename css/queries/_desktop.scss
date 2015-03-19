@@ -1,0 +1,42 @@
+@media screen and (min-width:768px) {
+	.nav h6{
+		display:none;
+	}
+	.nav button {
+		display:none;
+	}
+
+	.timeline {
+		height:40em;
+		width:40em;
+		margin:auto;
+		border-width: 12px;
+		position:absolute;
+		top:15%;
+		left:0;
+		right:0;
+		border-radius:50%;
+	}
+	.innerCircle {
+		height:33em;
+		width:33em;
+		margin:3em auto;
+		margin-bottom:0;
+		border-width: 3px;
+		position:relative;
+		border-radius:50%;
+	}
+
+	.fp-controlArrow {
+		display: initial;
+	}
+
+	.section .fp-slidesNav{
+		&.bottom {
+			top:15%;
+			width:40em;
+			height:40em;
+			z-index:11;
+		}
+	}
+}
