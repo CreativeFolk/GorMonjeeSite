@@ -1,8 +1,21 @@
+/* Branding Colors */
+$orange: #F15422;
+$green: #46A84C;
+$navy: #3A516D;
+$dark: #111;
+$light: #eee;
 
-$light: rgb(245,245,245);
-$lightFaded: rgba($light, 0.65);
+/* Differences */
+$orange-light: lighten($orange, .1);
+$orange-dark: darken($orange, .1);
 
-$dark: rgb(10,10,10);
-$darkFaded: rgba($dark, 0.65);
+$green-light: lighten($green, .25);
+$green-dark: darken($green, .25);
 
-$red: rgb(245, 62, 70);
+/* Aux Colors */
+$fats: #F8D608;
+$fiber: #36EA42;
+$carbs: #40A2E7;
+$protein: #F11B13;
+$minerals: #F65E10;
+$vitamins: #472772;

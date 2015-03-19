@@ -1,26 +1,77 @@
-.four p {
-	font-family:'Monstserrat';
-	font-weight:300;
-	font-size:30em;
-	color:$darkFaded;
+.open-sans {
+  font-family: 'open-sans', sans-serif;
 }
-.three p {
-	font-family:'Monstserrat';
-	font-weight:400;
-	font-size:30em;
-	color:$darkFaded;
+.museo {
+  font-family: 'museo-slab', serif;
+  font-weight: 700;
+}
+.proxima {
+  font-family: 'proxima-nova', sans-serif;
 }
 
-h6 {
-  letter-spacing: 0.10em;
-  font-family: 'Teko';
-  font-weight: 400;
-  font-size: 3.5em;
-  padding-top: .15em;
-  line-height: 0.6em;
-  text-align: center;
+.light {
+  font-weight: 100;
 }
 
-.nav .modal-body p{
-	color:$light;
+.semi-heavy {
+  font-weight: 600;
+}
+
+.heavy {
+  font-weight: 700;
+}
+
+body {
+  @extend .open-sans;
+  font-size: 1.4em;
+}
+
+h1 {
+  @extend .proxima;
+  @extend .heavy;
+}
+
+h2 {
+  @extend .museo;
+}
+
+h3 {
+
+}
+
+h4 {
+
+}
+
+p {
+
+}
+
+.nav {
+  @extend .proxima;
+  @extend .semi-heavy;
+
+  font-size: 1.2em;
+  
+  a {
+    border: transparent 3px solid;
+    color: $light;
+    transition: border 300ms ease-in;
+  }
+
+  li {
+    a {
+      &:hover,
+      &:focus {
+        background-color: transparent;
+        border-color: $light;
+      }
+    }
+  }
+
+  .btn {
+    font-size: 1em;
+    @extend .semi-heavy;
+    color: $navy;
+  }
 }
