@@ -1,4 +1,49 @@
 .top-nav {
-  height: 4.8em;
+  height: 3.8em;
   background-color: $navy;
+
+  border-radius: 0;
+  margin: 0;
+
+  li {
+    margin: .4em 2em;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
+
+.navbar-features {
+  position: absolute;
+  bottom: .4em;
+  left: 0;
+  right: 0;
+  margin: auto;
+  li {
+    width: 50%;
+    float: left;
+    text-align: center;
+    padding: 0 .2em;
+    a {
+      padding: .75em;
+      border-radius: 1em;
+
+      background-color: fade-out($orange-light, .5);
+      box-shadow: 0 0 2em fade-out($orange-dark, .25) inset;
+
+      @include gradient(fade-out($orange-light, .5), fade-out($orange-light, .25));
+      &:hover {
+        @include gradient(fade-out($orange-light, .5), fade-out($orange-light, 0));
+      }
+    }
+    & + li a {
+      @include gradient(fade-out($orange-light, .25), fade-out($orange-light, .5));
+      &:hover {
+        @include gradient(fade-out($orange-light, 0), fade-out($orange-light, .5));
+      }
+    }
+  }
+}
+
+

@@ -1,0 +1,14 @@
+html, body{
+  height: 100%;
+}
+
+.intro {
+  @include radial-gradient($orange-light, $orange-dark);
+
+  height: 80%;
+  position: relative;
+}
+
+.info-section {
+  height: 60%;
+}

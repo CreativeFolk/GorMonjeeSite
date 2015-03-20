@@ -3,14 +3,14 @@ $orange: #F15422;
 $green: #46A84C;
 $navy: #3A516D;
 $dark: #111;
-$light: #eee;
+$light: #fff;
 
 /* Differences */
-$orange-light: lighten($orange, .1);
-$orange-dark: darken($orange, .1);
+$orange-light: lighten(adjust-hue($orange, 25), 10%);
+$orange-dark: darken($orange, 10%);
 
-$green-light: lighten($green, .25);
-$green-dark: darken($green, .25);
+$green-light: lighten($green, 25%);
+$green-dark: darken($green, 25%);
 
 /* Aux Colors */
 $fats: #F8D608;
@@ -19,3 +19,26 @@ $carbs: #40A2E7;
 $protein: #F11B13;
 $minerals: #F65E10;
 $vitamins: #472772;
+
+
+@mixin radial-gradient($color1, $color2){
+  background: $color1; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  $color1 0%, $color2 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,$color1), color-stop(100%,$color2)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  $color1 0%,$color2 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  $color1 0%,$color2 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  $color1 0%,$color2 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  $color1 0%,$color2 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+@mixin gradient($color1, $color2){
+  background: $color1; /* Old browsers */
+  background: -moz-linear-gradient(left, $color1 0%, $color2 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,$color1), color-stop(100%,$color2)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(left, $color1 0%,$color2 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(left, $color1 0%,$color2 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(left, $color1 0%,$color2 100%); /* IE10+ */
+  background: linear-gradient(to right, $color1 0%,$color2 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$color1', endColorstr='$color2',GradientType=1 ); /* IE6-9 */
+}
