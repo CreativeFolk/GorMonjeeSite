@@ -29,6 +29,8 @@ body {
 h1 {
   @extend .proxima;
   @extend .heavy;
+  font-size: 2em;
+  margin-top: 0;
 }
 
 h2 {
@@ -43,7 +45,7 @@ h2 {
   a {
     border: transparent 3px solid;
     color: $light;
-    transition: all 300ms ease-in;
+    transition: all 100ms ease-in;
   }
 
   li {

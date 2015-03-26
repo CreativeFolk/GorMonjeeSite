@@ -29,19 +29,33 @@
       padding: .75em;
       border-radius: 1em;
 
+      transition: all 300ms ease;
+
       background-color: fade-out($orange-light, .5);
       box-shadow: 0 0 2em fade-out($orange-dark, .25) inset;
 
       @include gradient(fade-out($orange-light, .5), fade-out($orange-light, .25));
-      &:hover {
+      &:hover,
+      &:focus {
+        box-shadow: 0 0 2em fade-out($orange-dark, .5) inset;
         @include gradient(fade-out($orange-light, .5), fade-out($orange-light, 0));
+      }
+      &.active {
+        @include gradient(fade-out($orange-light, .25), fade-out($orange-light, 0));
       }
     }
     & + li a {
       @include gradient(fade-out($orange-light, .25), fade-out($orange-light, .5));
-      &:hover {
+      &:hover,
+      &:focus {
         @include gradient(fade-out($orange-light, 0), fade-out($orange-light, .5));
       }
+      &.active {
+        @include gradient(fade-out($orange-light, .5), fade-out($orange-light, .75));
+      }
+    }
+    a.active {
+      box-shadow: 0 0 2em fade-out($orange-dark, .25) inset;
     }
   }
 }
