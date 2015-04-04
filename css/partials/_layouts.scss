@@ -32,3 +32,19 @@ html, body {
     box-shadow: none;
   }
 }
+.blog-post {
+  img {
+    margin-top: 3em;
+    background-color:$green;
+  }
+  a{
+    text-decoration: none;
+    color: $dark;
+
+    &:hover {
+      opacity:.8;
+      transition: all 300ms;
+      color: $green; 
+    }
+  }
+}
