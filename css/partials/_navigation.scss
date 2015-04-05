@@ -12,6 +12,9 @@
       margin-right: 0;
     }
   }
+  .btn {
+    color:$light;
+  }
 }
 
 .navbar-features {
@@ -57,6 +60,32 @@
     a.active {
       box-shadow: 0 0 2em fade-out($orange-dark, .25) inset;
     }
+  }
+  button {
+    color:$light;
+  }
+}
+
+.modal .modal-dialog {
+  z-index: 1041;
+  h4 {
+    color: $green;
+    font-size: 2em;
+  }
+  p {
+    margin-top: 2em;
+    padding-bottom:.6em;
+    line-height: 1.5em;
+    border-bottom: 1px solid $orange-dark;
+  }
+  button {
+    color: $light;
+    background-color:$green;
+  }
+  .close {
+    color: $orange-dark;
+    background-color:transparent;
+    font-size:41px;
   }
 }
 

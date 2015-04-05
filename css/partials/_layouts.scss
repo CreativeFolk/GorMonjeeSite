@@ -32,6 +32,28 @@ html, body {
     box-shadow: none;
   }
 }
+
+.final {
+  @include radial-gradient($orange-light, $orange-dark);
+  height:20em;
+  figcaption {
+    background: none;
+    text-align: center;
+    margin-top: 7em;
+  }
+}
+
+.devices {
+  figcaption {
+    text-align: center;
+    margin-top: 5em;
+  }
+  img {
+    width: 400px;
+    margin-top: 8em;
+    padding:0 5em;
+  }
+}
 .blog-post {
   img {
     margin-top: 3em;
