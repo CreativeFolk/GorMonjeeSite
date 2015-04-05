@@ -9,9 +9,13 @@ html, body {
   position: relative;
 }
 
-.info-section {
+.section{
   height: 46em;
   width: 100%;
+}
+
+.info-section {
+  @extend .section;
 
   figcaption {
     margin-top: 15em;
@@ -24,7 +28,7 @@ html, body {
 }
 
 .about-section{
-  @extend .info-section;
+  @extend .section;
 }
 
 .inverted {
@@ -41,7 +45,9 @@ html, body {
 .mission-statement{
   @extend .center-abs;
   border-left:none;
-
+  height:min-content;
+  height:-webkit-min-content;
+  width:50%;
 }
 
 .blog-post {
