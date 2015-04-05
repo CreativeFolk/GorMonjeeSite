@@ -2,16 +2,16 @@
   figure{
     .imgcontainer{
       border-radius: 50%;
-      width:75%;
+      width:50%;
       height:0;
-      padding-top:75%;
-      margin:0 12.5%;
+      padding-top:50%;
+      margin:0 25%;
       background:$navy;
       position:relative;
     }
     img{
       @extend .center-abs;
-      width:45%;
+      width:65%;
     }
   }
 }
