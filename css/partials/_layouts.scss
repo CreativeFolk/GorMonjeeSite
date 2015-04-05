@@ -23,15 +23,27 @@ html, body {
   }
 }
 
+.about-section{
+  @extend .info-section;
+}
+
 .inverted {
   height: 36em;
   background-color: $dark;
+  color: $light;
 
   figcaption {
     background: transparent;
     box-shadow: none;
   }
 }
+
+.mission-statement{
+  @extend .center-abs;
+  border-left:none;
+
+}
+
 .blog-post {
   img {
     margin-top: 3em;

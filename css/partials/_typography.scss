@@ -79,3 +79,10 @@ h2 {
     @extend .heavy;
   }
 }
+
+.mission-statement{
+  @extend .proxima;
+  @extend .light;
+  font-size:3em;
+  color:$light;
+}
