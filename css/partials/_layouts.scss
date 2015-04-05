@@ -9,9 +9,13 @@ html, body {
   position: relative;
 }
 
-.info-section {
+.section{
   height: 46em;
   width: 100%;
+}
+
+.info-section {
+  @extend .section;
 
   figcaption {
     margin-top: 15em;
@@ -23,9 +27,14 @@ html, body {
   }
 }
 
+.about-section{
+  @extend .section;
+}
+
 .inverted {
   height: 36em;
   background-color: $dark;
+  color: $light;
 
   figcaption {
     background: transparent;
@@ -54,6 +63,15 @@ html, body {
     padding:0 5em;
   }
 }
+
+.mission-statement{
+  @extend .center-abs;
+  border-left:none;
+  height:min-content;
+  height:-webkit-min-content;
+  width:50%;
+}
+
 .blog-post {
   img {
     margin-top: 3em;

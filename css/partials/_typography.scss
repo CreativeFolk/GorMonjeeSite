@@ -79,3 +79,17 @@ h2 {
     @extend .heavy;
   }
 }
+
+.mission-statement{
+  @extend .proxima;
+  @extend .light;
+  font-size:3em;
+  color:$light;
+}
+
+
+.about-section{
+  h1,h3{
+    text-align:center;
+  }
+}
