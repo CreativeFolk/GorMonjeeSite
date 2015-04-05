@@ -1,0 +1,16 @@
+.about-section{
+  figure{
+    .imgcontainer{
+      border-radius: 50%;
+      width:75%;
+      height:0;
+      padding-top:75%;
+      margin:0 12.5%;
+      background:$navy;
+      position:relative;
+    }
+    img{
+      @extend .center-abs;
+    }
+  }
+}
