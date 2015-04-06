@@ -30,15 +30,30 @@ h1 {
   @extend .proxima;
   @extend .heavy;
   font-size: 2em;
-  margin-top: 0;
 }
 
 h2 {
   @extend .museo;
 }
 
+h3{
+  @extend .proxima;
+  @extend .heavy;
+}
+
 h4{
   @extend .museo;
+}
+
+h5{
+  @extend .proxima;
+  @extend .light;
+  font-size:1.6em;
+}
+
+.caps{
+  text-transform: uppercase;
+  letter-spacing: .05em
 }
 
 .top-nav {
@@ -84,6 +99,14 @@ h4{
   }
 }
 
+.signup{
+  .btn{
+    font-size:2em;
+    @extend .proxima;
+    @extend .heavy;
+  }
+}
+
 .mission-statement{
   @extend .proxima;
   @extend .light;
@@ -96,4 +119,8 @@ h4{
   h1,h3,h4{
     text-align:center;
   }
+}
+
+footer h5{
+  @extend .caps;
 }

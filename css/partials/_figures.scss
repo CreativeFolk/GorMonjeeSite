@@ -2,16 +2,38 @@
   figure{
     .imgcontainer{
       border-radius: 50%;
-      width:50%;
+      overflow:hidden;
+      width:65%;
       height:0;
-      padding-top:50%;
-      margin:0 25%;
-      background:$navy;
+      padding-top:65%;
+      margin:1em 17.5% 2em;
       position:relative;
     }
+
+    .fats{
+      background-color:$fats;
+    }
+
+    .protein{
+      background-color:$protein;
+    }
+
+    .fiber{
+      background-color:$fiber;
+    }
+
     img{
       @extend .center-abs;
-      width:65%;
+      width:100%;
+    }
+
+    .icon{
+      width:50%;
+      padding-top:50%;
+      margin:0 25%;
+      img{
+        width:65%;
+      }
     }
   }
 }
