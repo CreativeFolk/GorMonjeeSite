@@ -10,6 +10,7 @@ html, body {
 }
 
 .info-section {
+  position:relative;
   @extend .section;
 
   h1{
@@ -23,6 +24,11 @@ html, body {
     box-shadow: 0 0 2em fade-out($dark, .9);
     padding: 2em;
     border-radius: 1.4em;
+  }
+  img {
+    position:absolute;
+    left:1em;
+    top:1.4em;
   }
 }
 
@@ -44,6 +50,9 @@ html, body {
   figcaption {
     background: transparent;
     box-shadow: none;
+  }
+  img {
+    position:relative;
   }
 }
 
