@@ -1,16 +1,16 @@
 html, body {
-  height: 100%;
   overflow: auto;
 }
 .intro {
   @include radial-gradient($orange-light, $orange-dark);
 
-  min-height: 80%;
+  min-height: 53em;
   position: relative;
 }
 
 .info-section {
   position:relative;
+  overflow: hidden;
   @extend .section;
 
   h1{
@@ -27,8 +27,6 @@ html, body {
   }
   img {
     position:absolute;
-    left:1em;
-    top:1.4em;
   }
 }
 
