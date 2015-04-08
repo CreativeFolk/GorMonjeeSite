@@ -98,16 +98,14 @@ html, body {
 }
 
 .search {
-  position:absolute;
-  right:10em;
-  top:6em;
+  width: 100%;
+  margin-top: 2em;
   img {
     height:30px;
     margin-left:1em;
   }
   input {
     opacity:1;
-    z-index: 1000;
     height:30px;
     border: 1px solid black;
     float:left;
@@ -121,7 +119,7 @@ html, body {
 
 .blog-post {
   img {
-    margin-top: 4em;
+    margin-top: 2em;
     background-color:$green;
   }
   a{
