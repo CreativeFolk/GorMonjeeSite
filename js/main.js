@@ -4,6 +4,7 @@ $('#intro a').click(function (e) {
 });
 
 
-$('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-	skrollr.refresh('.tab-content');
+$('a[data-toggle="tab"]').on('shown.bs.tab', function(){
+	console.log('YAY');
+	skrollr.get().refresh('.tab-content');
 })
