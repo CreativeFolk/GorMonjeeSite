@@ -107,15 +107,17 @@ html, body {
   input {
     opacity:1;
     height:30px;
-    border: 1px solid black;
+    border: 1px solid #666;
     float:left;
     width:200px;
-    .search-submit {
-      width: 4em;
-      background-color: $green;
-      color: #FFF;
-    }
   }
+}
+
+.search input.search-submit {
+    width: 4em;
+    background-color: $green;
+    color: #FFF;
+    border:none;
 }
 
 .search a:active {
