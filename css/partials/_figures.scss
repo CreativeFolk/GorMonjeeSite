@@ -48,6 +48,14 @@
   }
 }
 
+.info-section.inverted{
+  figure{
+    img{
+      width:100%;
+    }
+  }
+}
+
 @media screen and (min-width:768px){
   .info-section{
     figure{
@@ -56,10 +64,26 @@
       }
     }
   }
+
+  .info-section.inverted{
+    figure{
+      img{
+        width:50%;
+      }
+    }
+  }
 }
 
 @media screen and (min-width:1200px){
   .info-section{
+    figure{
+      img{
+        width:50%;
+      }
+    }
+  }
+
+  .info-section.inverted{
     figure{
       img{
         width:50%;
