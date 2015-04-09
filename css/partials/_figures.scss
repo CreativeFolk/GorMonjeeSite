@@ -37,3 +37,33 @@
     }
   }
 }
+
+.info-section{
+  figure{
+    height:100%;
+
+    img{
+      width:125%;
+    }
+  }
+}
+
+@media screen and (min-width:768px){
+  .info-section{
+    figure{
+      img{
+        width:75%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:1200px){
+  .info-section{
+    figure{
+      img{
+        width:50%;
+      }
+    }
+  }
+}
