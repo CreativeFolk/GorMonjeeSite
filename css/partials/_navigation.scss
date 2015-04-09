@@ -17,6 +17,20 @@
   }
 }
 
+.top-nav .navbar-brand {
+  padding:0;
+  border:none;
+
+  img {
+    height:3.2em;
+    margin-top:0;
+  }
+  .logotype {
+    height:2.6em;
+    margin: .8em 0 0 1.4em;
+  }
+}
+
 .navbar-features {
   position: absolute;
   bottom: .4em;
