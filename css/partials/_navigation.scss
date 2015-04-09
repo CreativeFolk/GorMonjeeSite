@@ -1,9 +1,22 @@
 .top-nav {
   height: 3.8em;
   background-color: $navy;
-
   border-radius: 0;
   margin: 0;
+  #navbar {
+    position:relative;
+    z-index: 1000;
+    background-color:$navy;
+  }
+  .navbar-header {
+    position:relative;
+    z-index: 1000;
+    button {
+      span {
+        background-color:#FFF;
+      }
+    }
+  }
 
   li {
     margin: .4em 2em;
