@@ -110,6 +110,11 @@ html, body {
     border: 1px solid black;
     float:left;
     width:200px;
+    .search-submit {
+      width: 4em;
+      background-color: $green;
+      color: #FFF;
+    }
   }
 }
 
