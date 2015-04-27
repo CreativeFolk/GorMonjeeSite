@@ -40,7 +40,7 @@
 
 .info-section{
   figure{
-    height:100%;
+    min-height:46em;
 
     img{
       width:125%;
@@ -53,14 +53,60 @@
     img{
       width:100%;
     }
+    
+    figcaption{
+      background-color: lighten($dark, 15%);
+      z-index:100;
+    }
   }
 }
+
+
+.blog-header{
+  height:0;
+  padding-top:40%;
+  position:relative;
+  overflow: hidden;
+  margin-top:2em;
+  margin-bottom:3em;
+  border-radius:1em;
+  img{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    margin:auto;
+  }
+}
+
+.blog-images{
+  width:100%;
+  height:0;
+  padding-top:50%;
+  position:relative;
+  overflow: hidden;
+  border-radius:1em;
+  margin-top:1em;
+  margin-bottom: 1.5em;
+  img{
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    margin:auto;
+  }
+}
+
 
 @media screen and (min-width:768px){
   .info-section{
     figure{
       img{
-        width:75%;
+        width:100%;
       }
     }
   }
@@ -68,7 +114,19 @@
   .info-section.inverted{
     figure{
       img{
-        width:50%;
+        //width:50%;
+      }
+    }
+  }
+}
+
+@media screen and (min-width:992px){
+  .info-section.inverted{
+    figure{
+      img{
+        width:75%;
+        position:absolute;
+        right:1em;
       }
     }
   }
@@ -78,7 +136,8 @@
   .info-section{
     figure{
       img{
-        width:50%;
+        height:100%;
+        width:auto;
       }
     }
   }
@@ -87,6 +146,7 @@
     figure{
       img{
         width:50%;
+        height:auto;
       }
     }
   }

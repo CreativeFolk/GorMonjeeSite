@@ -1,6 +1,12 @@
 html, body {
   overflow: auto;
 }
+
+.site-main{
+  @extend .clearfix;
+  margin-bottom: 2em;
+}
+
 .intro {
   @include radial-gradient($orange-light, $orange-dark);
 
@@ -13,6 +19,10 @@ html, body {
   overflow: hidden;
   @extend .section;
 
+  .container{
+    position:relative;
+  }
+
   h1{
     margin-top:0;
   }
@@ -24,6 +34,7 @@ html, body {
     box-shadow: 0 0 2em fade-out($dark, .9);
     padding: 2em;
     border-radius: 1.4em;
+    position:absolute;
   }
   img {
     position:absolute;
@@ -99,34 +110,30 @@ html, body {
 .search {
   width: 100%;
   margin-top: 2em;
+  font-size:2em;
+  form{
+    width:100%;
+  }
   img {
     height:30px;
     margin-left:1em;
   }
+  .form-group{
+    height:34px;
+    padding:0;
+  }
   input {
     opacity:1;
-    height:30px;
-    border: 1px solid #666;
-    float:left;
-    width:200px;
+    width:100% !important;
+    box-shadow:none;
+    border: 1px solid transparent;
+    height:100%;
   }
-}
-
-.search input.search-submit {
-    width: 4em;
-    background-color: $green;
-    color: #FFF;
-    border:none;
-}
-
-.search a:active {
-
 }
 
 .blog-post {
   img {
     margin-top: 2em;
-    background-color:$green;
   }
   a{
     text-decoration: none;
@@ -138,9 +145,6 @@ html, body {
       color: $green; 
     }
   }
-}
-
-.slide-me{
 }
 
 footer{
@@ -156,5 +160,11 @@ footer{
 }
 
 
+.alignleft{
+  float:left;
+}
 
+.alignright{
+  float:right;
+}
 

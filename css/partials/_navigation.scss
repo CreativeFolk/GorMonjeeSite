@@ -57,8 +57,7 @@
   right: 0;
   margin: auto;
   li {
-    width: 50%;
-    float: left;
+    width: 100%;
     text-align: center;
     padding: 0 .2em;
     a {
@@ -109,7 +108,7 @@
     margin-top: 2em;
     padding-bottom:.6em;
     line-height: 1.5em;
-    border-bottom: 1px solid $orange-dark;
+    border-bottom: 1px solid transparent;
   }
   button {
     color: $light;
@@ -123,3 +122,11 @@
 }
 
 
+@media screen and (min-width:768px){
+  .navbar-features{
+    li{
+      width:50%;
+      float:left;
+    }
+  }
+}
