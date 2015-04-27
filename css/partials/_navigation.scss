@@ -19,7 +19,10 @@
   }
 
   li {
+    width:100%;
+    float:none;
     margin: .4em 2em;
+    margin-left:0 !important;
 
     &:last-child {
       margin-right: 0;
@@ -34,6 +37,10 @@
     border-color:$carbs;
     margin-top:.55em;
   }
+}
+
+.navbar-header{
+  height:3.8em;
 }
 
 .top-nav .navbar-brand {
@@ -105,7 +112,7 @@
     font-size: 2em;
   }
   p {
-    margin-top: 2em;
+    margin-top: 0;
     padding-bottom:.6em;
     line-height: 1.5em;
     border-bottom: 1px solid transparent;
@@ -123,6 +130,13 @@
 
 
 @media screen and (min-width:768px){
+  .top-nav{
+    li{
+      margin: .4em 2em;
+      width:auto;
+      float:left;
+    }
+  }
   .navbar-features{
     li{
       width:50%;
